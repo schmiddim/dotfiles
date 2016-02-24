@@ -15,7 +15,7 @@
 ##############################################################################
 # Shell prompt
 
-export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[01;33m\]\h\[\033[01;34m\]\w\[\033[01;31m\]$(__git_ps1 " (%s)")\$\[\033[00m\] '
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[01;33m\]\h\[\033[01;34m\]\w\[\033[01;31m\]$(__git_ps1 " (%s)")\[\033[01;34m\]\$\[\033[00m\] '
 
 # If fortune is installed, run a fortune
 if [ -e /usr/games/fortune ]; then

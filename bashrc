@@ -14,11 +14,11 @@
 # 01. General                                                                #
 ##############################################################################
 # Shell prompt
-export PS1="\n\[\e[0;36m\]┌─[\[\e[0m\]\[\e[1;33m\]\u\[\e[0m\]\[\e[1;36m\] @ \[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[0;36m\]]─[\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]\[\e[0;36m\]]\[\e[0;36m\]─[\[\e[0m\]\[\e[0;31m\]\t\[\e[0m\]\[\e[0;36m\]]\[\e[0m\]\n\[\e[0;36m\]└─[\[\e[0m\]\[\e[1;37m\]\$\[\e[0m\]\[\e[0;36m\]]› \[\e[0m\]"
+
 
 # If fortune is installed, run a fortune
-if [ -e /opt/local/bin/fortune ]; then
-    fortune -so
+if [ -e /usr/games/fortune ]; then
+    fortune 
     echo " "
 fi
 
@@ -26,7 +26,6 @@ fi
 # 02. Aliases                                                                #
 ##############################################################################
 # Enable colors in "ls" command output
-alias ls="ls -Glah"
 
 ##############################################################################
 # 03. Theme/Colors                                                           #
@@ -35,3 +34,8 @@ alias ls="ls -Glah"
 export CLICOLOR=1
 # Set "ls" colors
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+##############################################################################
+# 04 Variables                                                               #
+##############################################################################
+export XDEBUG_CONFIG="idekey=PHPSTORM remote_host=127.0.0.1"

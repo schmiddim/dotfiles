@@ -15,6 +15,7 @@
 ##############################################################################
 # Shell prompt
 
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\]\w$(__git_ps1 " (%s)")\$\[\033[00m\] '
 
 # If fortune is installed, run a fortune
 if [ -e /usr/games/fortune ]; then
@@ -24,6 +25,9 @@ fi
 
 ##############################################################################
 # 02. Aliases                                                                #
+alias mvv="mvv-cli.phar -s 'Bonner Platz; Karl-Theodor-Straße' -e 'Sendlinger Tor;Fürstenried West;Einsteinstraße' -n"
+alias logstocks='multitail /var/log/apache2/stocks/error.log'
+
 ##############################################################################
 # Enable colors in "ls" command output
 

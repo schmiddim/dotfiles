@@ -32,6 +32,9 @@ alias weather='finger munich@graph.no'
 alias gitlog='git log --oneline --graph'
 alias gitdiffd='git difftool -d'
 
+#Aliases OpenHab
+alias toggle-buero='openhab-toggle BueroAlle'
+alias toggle-wz='openhab-toggle SchlafzimmerAlle'
 ##############################################################################
 # Enable colors in "ls" command output
 
@@ -42,6 +45,7 @@ alias gitdiffd='git difftool -d'
 export CLICOLOR=1
 # Set "ls" colors
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
 
 ##############################################################################
 # 04 Variables                                                               #

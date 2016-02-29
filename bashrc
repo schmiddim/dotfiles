@@ -27,6 +27,10 @@ fi
 # 02. Aliases                                                                #
 alias mvv="mvv-cli.phar -s 'Bonner Platz; Karl-Theodor-Straße' -e 'Sendlinger Tor;Fürstenried West;Einsteinstraße' -n"
 alias logstocks='multitail /var/log/apache2/stocks/error.log'
+alias weather='finger munich@graph.no'
+##Aliases Git
+alias gitlog='git log --oneline --graph'
+alias gitdiffd='git difftool -d'
 
 ##############################################################################
 # Enable colors in "ls" command output
@@ -42,4 +46,8 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
 ##############################################################################
 # 04 Variables                                                               #
 ##############################################################################
+#@see http://stackoverflow.com/questions/9457233/unlimited-bash-history
 export XDEBUG_CONFIG="idekey=PHPSTORM remote_host=127.0.0.1"
+export HISTFILESIZE=-1
+export HISTSIZE=-1
+export HISTTIMEFORMAT="[%F %T] "

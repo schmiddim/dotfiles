@@ -23,11 +23,17 @@ if [ -e /usr/games/fortune ]; then
     echo " "
 fi
 
+###############################################################################
+# 0.1.5 Imports
+if [ -f ~/.sensible.bash ]; then
+   source ~/.sensible.bash
+fi
 ##############################################################################
 # 02. Aliases                                                                #
 alias mvv="mvv-cli.phar -s 'Bonner Platz; Karl-Theodor-Straße' -e 'Sendlinger Tor;Fürstenried West;Einsteinstraße' -n"
 alias logstocks='multitail /var/log/apache2/stocks/error.log'
 alias weather='finger munich@graph.no'
+alias slic3r='/opt/printer/slic3r/slic3r.pl'
 ##Aliases Git
 alias gitlog='git log --oneline --graph'
 alias gitdiffd='git difftool -d'
@@ -50,8 +56,4 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
 ##############################################################################
 # 04 Variables                                                               #
 ##############################################################################
-#@see http://stackoverflow.com/questions/9457233/unlimited-bash-history
 export XDEBUG_CONFIG="idekey=PHPSTORM remote_host=127.0.0.1"
-export HISTFILESIZE=-1
-export HISTSIZE=-1
-export HISTTIMEFORMAT="[%F %T] "

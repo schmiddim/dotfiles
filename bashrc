@@ -40,7 +40,9 @@ alias gitdiffd='git difftool -d'
 
 #Aliases OpenHab
 alias toggle-buero='openhab-toggle BueroAlle'
-alias toggle-wz='openhab-toggle SchlafzimmerAlle'
+alias toggle-sz='openhab-toggle SchlafzimmerAlle'
+alias toggle-wz='openhab-toggle ALL_WZ_Alle'
+
 ##############################################################################
 # Enable colors in "ls" command output
 

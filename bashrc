@@ -38,6 +38,7 @@ alias slic3r='/opt/printer/slic3r/slic3r.pl'
 alias gitlog='git log --oneline --graph'
 alias gitdiffd='git difftool -d'
 
+alias octavegui='octave --force-gui'
 #Aliases OpenHab
 alias toggle-buero='openhab-toggle BueroAlle'
 alias toggle-sz='openhab-toggle SchlafzimmerAlle'

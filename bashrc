@@ -45,6 +45,9 @@ alias toggle-sz='openhab-toggle SchlafzimmerAlle'
 alias toggle-wz='openhab-toggle ALL_WZ_Alle'
 alias light-all-off="openhab-command BueroAlle OFF && sleep 1 &&  openhab-command SchlafzimmerAlle OFF && sleep 1 && openhab-command ALL_WZ_Alle OFF"
 
+
+alias backup-libreelec='sudo dd if=/dev/mmcblk0 | pv | gzip -c >/media/ms/backup/libreelec-`date +%Y-%m-%d`.img.gz'
+
 ##############################################################################
 # Enable colors in "ls" command output
 
@@ -61,3 +64,5 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
 # 04 Variables                                                               #
 ##############################################################################
 export XDEBUG_CONFIG="idekey=PHPSTORM remote_host=127.0.0.1"
+PATH=$PATH:~/.composer/vendor/bin
+export PATH 
